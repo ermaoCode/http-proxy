@@ -54,6 +54,8 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		actionFunc(w, r, "hello")
 	})
+
+	fmt.Println("esEndpointStr: ", esEndpointStr)
+	fmt.Println("ListenAndServe: 0.0.0.0:8080")
 	fmt.Println(http.ListenAndServe(":8080", nil))
-	fmt.Println("listen: ", esEndpointStr)
 }
