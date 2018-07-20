@@ -3,8 +3,6 @@
 set -e
 cd `dirname $0`
 
-cp $JVESSEL_DIR/services/etcd/image/etcdctl etcdctl
-
 image_name="http-proxy"
 
 go build ../http-proxy.go

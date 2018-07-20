@@ -3,6 +3,8 @@
 # start jvessel probe
 /jvessel/satellite.sh
 
+http-proxy
+
 for (( ; ; ))
 do
     sleep 5
